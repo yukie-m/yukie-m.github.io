@@ -7,6 +7,14 @@ html {
 * {
   box-sizing: border-box;
 }
+a {
+  color: $dark-gray;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $blue;
+}
 
 h2 {
   font-weight: 600;
@@ -104,8 +112,20 @@ header {
     padding: 2rem;
   }
 
+  //   .title {
+  //     display: flex;
+  //     justify-content: center;
+  //     h2 {
+  //       text-align: center;
+  //       width: 30%;
+  //       margin: 2rem 0;
+  //       border-bottom: 1px solid $dark-gray;
+  //     }
+  //   }
+
   .work-grid {
     width: 100%;
+    background-color: $light-gray;
 
     img {
       width: 100%;
@@ -114,6 +134,18 @@ header {
     .details {
       width: 90%;
       margin: 1rem auto;
+      p {
+        margin: 0.5rem 0;
+      }
+
+      .links {
+        display: flex;
+        gap: 1rem;
+        p {
+          border-bottom: 1px solid $dark-gray;
+          margin-bottom: 2rem;
+        }
+      }
     }
   }
 }

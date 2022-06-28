@@ -7,6 +7,15 @@ html {
   box-sizing: border-box;
 }
 
+a {
+  color: rgb(81, 81, 84);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(94, 124, 190);
+}
+
 h2 {
   font-weight: 600;
   margin: 0;
@@ -97,6 +106,7 @@ header ul {
 }
 .home-main .work-grid {
   width: 100%;
+  background-color: #f5f5f7;
 }
 .home-main .work-grid img {
   width: 100%;
@@ -104,4 +114,15 @@ header ul {
 .home-main .work-grid .details {
   width: 90%;
   margin: 1rem auto;
+}
+.home-main .work-grid .details p {
+  margin: 0.5rem 0;
+}
+.home-main .work-grid .details .links {
+  display: flex;
+  gap: 1rem;
+}
+.home-main .work-grid .details .links p {
+  border-bottom: 1px solid rgb(81, 81, 84);
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=style.css.map */
