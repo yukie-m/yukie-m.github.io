@@ -45,7 +45,7 @@ body {
 }
 
 header {
-  max-width: 100%;
+  width: 100%;
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -116,6 +116,9 @@ header ul {
   margin: 1rem auto;
 }
 .home-main .work-grid .details p {
+  margin: 0.5rem 0;
+}
+.home-main .work-grid .details h4 {
   margin: 0.5rem 0;
 }
 .home-main .work-grid .details .links {
