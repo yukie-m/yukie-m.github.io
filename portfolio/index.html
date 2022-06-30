@@ -94,7 +94,7 @@
           </div>
         </div>
 
-        <div class="work-container">
+        <div class="work-container fadeUpTrigger">
           <div class="mockup-image">
             <img src="../assets/hotels-nz.webp" alt="hotels-nz" />
           </div>
@@ -118,7 +118,7 @@
           </div>
         </div>
 
-        <div class="work-container">
+        <div class="work-container fadeUpTrigger">
           <div class="mockup-image">
             <img src="../assets/movie-reviews.jpg" alt="movie-reviews" />
           </div>
@@ -156,5 +156,30 @@
         ></a>
       </div>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function fadeAnime() {
+        $(".fadeUpTrigger").each(function () {
+          var elemPos = $(this).offset().top - 50;
+          var scroll = $(window).scrollTop();
+          var windowHeight = $(window).height();
+          if (scroll >= elemPos - windowHeight) {
+            $(this).addClass("fadeUp");
+          } else {
+            $(this).removeClass("fadeUp");
+          }
+        });
+      }
+      $(window).scroll(function () {
+        fadeAnime();
+      });
+      // $(window).on("load", function () {
+      //   fadeAnime();
+      // });
+    </script>
   </body>
 </html>

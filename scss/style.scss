@@ -92,7 +92,6 @@ footer {
   width: 90%;
   margin: 80px auto;
   margin-bottom: 0;
-
   animation: fadein 3s forwards;
 
   @keyframes fadein {
@@ -107,6 +106,22 @@ footer {
   .details-container {
     padding: 1rem;
     margin: 1rem 0 0 0;
+
+    .row {
+      display: grid;
+      grid-template-columns: 40% 1fr;
+      gap: 1rem;
+      align-items: center;
+
+      li {
+        font-size: 12px;
+        line-height: 20px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
 
     .right-box {
       display: flex;
@@ -141,18 +156,10 @@ footer {
     width: 100%;
     background-color: $light-gray;
     padding: 2rem;
+    h2 {
+      margin-bottom: 1rem;
+    }
   }
-
-  //   .title {
-  //     display: flex;
-  //     justify-content: center;
-  //     h2 {
-  //       text-align: center;
-  //       width: 30%;
-  //       margin: 2rem 0;
-  //       border-bottom: 1px solid $dark-gray;
-  //     }
-  //   }
 
   .work-grid {
     width: 100%;
@@ -201,6 +208,7 @@ footer {
 
 @media (min-width: 768px) {
   .home-main {
+    overflow: hidden;
     .work-grid {
       width: 80%;
       margin: 0 auto;
@@ -208,16 +216,48 @@ footer {
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
     }
+    .work-container {
+      box-sizing: border-box;
+    }
+  }
+  .fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .fadeUpTrigger {
+    opacity: 0;
+  }
+
+  @keyframes fadeUpAnime {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   //About me
   .profile {
     .center-container {
-      width: 80%;
-      margin: 0 auto;
-
       hr {
         margin: 8px 0;
+      }
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 40% 1fr;
+      gap: 1rem;
+      align-items: center;
+
+      img {
+        width: 100%;
       }
     }
 
@@ -228,6 +268,12 @@ footer {
     .right-box li,
     .bullet-right-box li {
       margin: 0.5rem 0;
+    }
+    .work-container {
+      hr {
+        margin: 8px 0;
+        width: 10%;
+      }
     }
   }
 }
