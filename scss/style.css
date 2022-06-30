@@ -1,6 +1,7 @@
 html {
   font-size: 100%;
   max-width: 100%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -60,7 +61,7 @@ header {
   background-color: white;
 }
 header img {
-  max-width: 40%;
+  max-width: 70%;
   height: auto;
 }
 header ul {
@@ -186,6 +187,9 @@ footer .icons i {
   margin-bottom: 2rem;
 }
 
+#work-section {
+  padding-top: 3rem;
+}
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -196,6 +200,14 @@ footer .icons i {
 }
 
 @media (min-width: 768px) {
+  header {
+    padding: 0 2rem;
+  }
+  header img {
+    max-width: 40%;
+    height: auto;
+  }
+
   .home-main {
     overflow: hidden;
   }
