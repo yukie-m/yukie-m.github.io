@@ -207,7 +207,6 @@ footer .icons i {
     max-width: 40%;
     height: auto;
   }
-
   .home-main {
     overflow: hidden;
   }
@@ -221,7 +220,6 @@ footer .icons i {
   .home-main .work-container {
     box-sizing: border-box;
   }
-
   .fadeUp {
     -webkit-animation-name: fadeUpAnime;
             animation-name: fadeUpAnime;
@@ -231,11 +229,9 @@ footer .icons i {
             animation-fill-mode: forwards;
     opacity: 0;
   }
-
   .fadeUpTrigger {
     opacity: 0;
   }
-
   @-webkit-keyframes fadeUpAnime {
     from {
       opacity: 0;
@@ -246,7 +242,6 @@ footer .icons i {
       transform: translateY(0);
     }
   }
-
   @keyframes fadeUpAnime {
     from {
       opacity: 0;
